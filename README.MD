@@ -1,13 +1,13 @@
-# GPT-3.5 Trubo Chatbot
+# askGPT-3.5 Turbo Chatbot
 
-This is a simple chatbot implementation that uses the GPT-3 language model from OpenAI to generate responses to user input. The user can input text messages, and the chatbot will respond with generated text that attempts to continue the conversation. The user can also input code snippets, and the chatbot will respond with generated code that attempts to continue the conversation. The chatbot uses the GPT-3.5 Turbo API, which is a faster version of the GPT-3 API.
+This is a simple chatbot implementation that uses the GPT-3.5 language model from OpenAI to generate responses to user input. The user can input text messages, and the chatbot will respond with generated text that attempts to continue the conversation. The user can also input code snippets, and the chatbot will respond with generated code that attempts to continue the conversation. The chatbot uses the GPT-3.5 Turbo API, which is a faster version of the GPT-3 API.
 
 This project is built using the Go programming language, also known as Golang. One of the main reasons for choosing Golang for this project is its cross-platform support. Golang binaries can be easily compiled for different operating systems and architectures, making it easy to run the program on any system without the need for any additional dependencies or installations. This makes it a great choice for building command-line tools that need to run on different systems with minimal setup requirements. 
 
 ## Prerequisites
 go version 1.16 darwin/amd64
 OR
-ubuntu 20.04
+ubuntu 20.04 if running pre-compiled binary
 
 Download and install Go from https://go.dev/dl/
 
@@ -60,7 +60,7 @@ Or you can run the chatbot from the command line using pre-build binary:
 where `path/to/your/input/files.go` is a comma-separated list of file paths containing initial system input text or code for the chatbot.
 
 ## Usage
-
+On first run it will read the content of the files, passed as arguments.
 The chatbot will prompt the user for input and then generate a response using GPT-3.5 Turbo API. 
 
 ## Contributing

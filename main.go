@@ -55,7 +55,7 @@ func main() {
 		Messages: []Message{
 			{
 				Role:    "user",
-				Content: "Read and remember my code: \n" + strings.Join(inputs, ""),
+				Content: strings.Join(inputs, ""),
 			},
 		},
 		Temperature: 0.7,
